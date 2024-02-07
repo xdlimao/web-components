@@ -1,0 +1,7 @@
+* {
+    /*Deixando o CSS sem autocomplete*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Fim do sem autocomplete*/
+}

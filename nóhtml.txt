@@ -1,0 +1,9 @@
+Em HTML, um nó filho refere-se a qualquer elemento HTML que está contido dentro de outro elemento. Por exemplo, se você tem uma <div> que contém um parágrafo <p> e uma imagem <img>, ambos o parágrafo e a imagem são nós filhos da <div>.
+
+Aqui está como isso se aplica ao seu código:
+
+shadow.appendChild(this.build());: Nesta linha, estamos adicionando um nó filho ao Shadow DOM. O método this.build() deve retornar um elemento HTML (como uma <div> ou outro componente personalizado). Esse elemento será inserido dentro do Shadow DOM e renderizado como parte do componente.
+
+shadow.appendChild(this.styles());: Similar ao passo anterior, estamos adicionando outro nó filho ao Shadow DOM. O método this.styles() deve retornar um elemento que contém os estilos CSS específicos para o componente. Esses estilos serão aplicados apenas dentro do Shadow DOM, isolando-os do restante da página.
+
+Em resumo, adicionar um nó filho significa incluir um elemento HTML dentro de outro elemento. No contexto do Shadow DOM, isso permite criar componentes encapsulados e reutilizáveis, onde os estilos e comportamentos não afetam outros elementos na página.
